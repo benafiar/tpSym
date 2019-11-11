@@ -1,0 +1,25 @@
+
+{% block body %}
+<h1  style="color:RosyBrown"> la liste des produits  </h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nom</th>
+      <th>Prix</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+ {% for produit in produits %}
+   <tr>
+    <td>{{ produit.name }}</td>
+    <td>{{ produit.prix }}</td>
+    <td>{{ produit.description}}</td>
+   </tr>
+    {% endfor %}
+  {% endblock %}
+
+
+
+
